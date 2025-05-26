@@ -38,8 +38,9 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 - 📦 Organização de pacotes de forma modular.
 - 🔌 Encapsulamento das conexões com o banco de dados.
 - 📈 Projeto preparado para uma futura migração para frameworks ORM, como **JPA** ou **Hibernate**.
+- 💉 Injeção de Conexão via Construtor pelo Factory.
+--- 
 
----
 
 ## 🗂️ Estrutura do Projeto
 ```
