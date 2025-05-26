@@ -42,12 +42,15 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 ---
 
 ## 🗂️ Estrutura do Projeto
+```
+src/
 ├── application/ → programa principal
 ├── db/ → manipulação de conexões e exceções
 ├── model/
-│ ├── dao/ → interfaces e fábrica de DAOs
-│ ├── dao/impl/ → implementações concretas dos DAOs
-│ └── entities/ → classes que representam as entidades do projeto
+│   ├── dao/ → interfaces e fábrica de DAOs
+│   ├── dao/impl/ → implementações concretas dos DAOs
+│   └── entities/ → classes que representam as entidades do projeto
+```
 
 ## Por que estou fazendo esse projeto?
 Porque quero consolidar o que venho estudando sobre **Java e Banco de Dados**, colocar boas práticas em ação e deixar pronto um projeto que posso apresentar como parte do meu portfólio. Além disso, trabalhar com padrões de projeto como DAO e Factory Pattern me ajuda a entender melhor como sistemas reais são organizados.
