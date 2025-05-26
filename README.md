@@ -2,7 +2,7 @@
 
 # 📺 Projeto Sistema de Streaming — Java JDBC + DAO
 
-Olá! 👋 Este é o meu primeiro projeto seguindo um **padrão de projeto oficial** e também a minha primeira aplicação que integra **Java** com um banco de dados usando **JDBC**.  
+Olá!  Este é o meu primeiro projeto seguindo um **padrão de projeto oficial** e também a minha primeira aplicação que integra **Java** com um banco de dados usando **JDBC**.  
 Até aqui, eu vinha trabalhando apenas com Java puro na IDE, então esse projeto marca uma fase importante da minha jornada de estudos.
 
 Aqui, estou reunindo tudo que venho aprendendo: desde boas práticas de programação até o uso de **DAO (Data Access Object)** e **JDBC** para persistência de dados. O projeto é inspirado no conteúdo do Nelio Alves, mas adaptado para a minha proposta.
