@@ -26,6 +26,7 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 - **JDBC API**
 - **PostgreSQL Database**
 - **PostgreSQL Connector/J**
+- **Apache Maven*
 
 ---
 
@@ -39,6 +40,7 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 - 🔌 Encapsulamento das conexões com o banco de dados.
 - 📈 Projeto preparado para uma futura migração para frameworks ORM, como **JPA** ou **Hibernate**.
 - 💉 Injeção de Conexão via Construtor pelo Factory.
+- 📁 Maven para gerenciar minhas dependências.
 --- 
 
 
@@ -51,6 +53,8 @@ src/
 │   ├── dao/ → interfaces e fábrica de DAOs
 │   ├── dao/impl/ → implementações concretas dos DAOs
 │   └── entities/ → classes que representam as entidades do projeto
+├── config.properties
+├── Pom.xml
 ```
 
 ## Por que estou fazendo esse projeto?
