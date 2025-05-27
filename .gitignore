@@ -27,11 +27,7 @@
 # Maven target directory
 /target/
 
-# IDEA files (caso use IntelliJ)
-/.idea/
-/*.iml
-
-# Configuração local
+# Config local
 *.properties
 *.env
 
