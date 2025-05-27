@@ -26,7 +26,7 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 - **JDBC API**
 - **PostgreSQL Database**
 - **PostgreSQL Connector/J**
-- **Apache Maven*
+- **Apache Maven**
 
 ---
 
