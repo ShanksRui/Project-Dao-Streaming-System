@@ -19,6 +19,9 @@
 *.tar.gz
 *.rar
 
+# readme file
+*.md
+
 # Eclipse files
 .classpath
 .project
