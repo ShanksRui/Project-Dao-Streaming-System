@@ -1,6 +1,7 @@
 package model.Entities;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Streaming implements Serializable{
 
@@ -34,6 +35,22 @@ public class Streaming implements Serializable{
 	}
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Streaming other = (Streaming) obj;
+		return Objects.equals(id, other.id);
 	}
 	@Override
 	public String toString() {
