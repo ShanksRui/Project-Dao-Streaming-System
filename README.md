@@ -1,6 +1,6 @@
 # Project-Dao-Streaming-System
 
-## 📺 Projeto Sistema de Streaming — Java JDBC + DAO
+##  Projeto Sistema de Streaming — Java JDBC + DAO
 
 Olá! Este é o meu primeiro projeto seguindo um **padrão de projeto oficial** e também a minha primeira aplicação que integra **Java** com banco de dados usando **JDBC**.
 
@@ -22,7 +22,7 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **JDBC API**
 - **PostgreSQL Database**
@@ -31,7 +31,7 @@ Com isso, estou praticando operações **CRUD (Create, Read, Update e Delete)** 
 
 ---
 
-## 📌 Padrões e Boas Práticas Aplicadas
+##  Padrões e Boas Práticas Aplicadas
 
 - 📁 **DAO Pattern** → separação da lógica de acesso a dados.
 - 🏭 **Factory Pattern** → criação centralizada das instâncias DAO.
