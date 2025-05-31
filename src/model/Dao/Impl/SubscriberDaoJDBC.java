@@ -61,8 +61,8 @@ public class SubscriberDaoJDBC implements SubscriberDao{
 		
 		try {
 			ps = con.prepareStatement("Update Subscriber set "
-					+ "name = ?,salary = ?,start_of_subscription = ?,StreamingId = ?"
-					+ "where id = ?");	
+					+ "name = ?,salary = ?,start_of_subscription = ?,StreamingId = ? "
+					+ "Where Id = ?");	
 
 		    ps.setString(1, obj.getName());
 		    ps.setDouble(2, obj.getSalary());
@@ -83,7 +83,7 @@ public class SubscriberDaoJDBC implements SubscriberDao{
 		PreparedStatement ps = null;
 		
 		try {
-			ps = con.prepareStatement("Delete From Subscriber Where id = ");	
+			ps = con.prepareStatement("Delete From Subscriber Where id = ?");	
 		    ps.setInt(1, id);
 		    int rows = ps.executeUpdate();
 		    
@@ -105,7 +105,10 @@ public class SubscriberDaoJDBC implements SubscriberDao{
 		ResultSet rs = null;
 		
 		try {
-			ps = con.prepareStatement("Select * From Subscriber Where id = ?");	
+			ps = con.prepareStatement("Select Subscriber.*, Streaming.name as stName,price as stPrice "
+					+ "from Subscriber inner join Streaming on "
+					+ " Subscriber.StreamingId = Streaming.Id "
+					+ "Where Subscriber.Id = ?");	
 			ps.setInt(1, id);
 			rs = ps.executeQuery();
 			Subscriber subs = null;

@@ -9,6 +9,7 @@ import java.util.List;
 
 import db.Db;
 import db.DbException;
+import db.DbIntegrityException;
 import model.Dao.StreamingDao;
 import model.Entities.Streaming;
 
@@ -30,9 +31,11 @@ public class StreamingDaoJDBC implements StreamingDao {
 					+ "(name,price)"
 					+ "Values "
 					+ "(?,?)",PreparedStatement.RETURN_GENERATED_KEYS);
+			ps.setString(1, obj.getName());
+			ps.setDouble(2,obj.getPrice());
 			
             int rows = ps.executeUpdate();
-			
+				
 			if(rows > 0) {
 				rs = ps.getGeneratedKeys();			
 			if(rs.next()) {
@@ -86,7 +89,7 @@ public class StreamingDaoJDBC implements StreamingDao {
 			    }
 				
 	}catch(SQLException e) {
-		throw new DbException(e.getMessage());
+		throw new DbIntegrityException(e.getMessage());
 	}finally {
 		Db.closePrepareStatement(ps);
 	}
