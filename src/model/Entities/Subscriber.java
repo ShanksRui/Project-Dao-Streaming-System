@@ -10,18 +10,21 @@ public class Subscriber implements Serializable{
 	
 	private Integer id;
 	private String name;
-	private Integer age;
+	private Double salary;
 	private LocalDate StartSubscription;
 	
 	private Streaming streaming;
 
 	
-	public Subscriber(Integer id, String name, Integer age, LocalDate startSubscription, Streaming streaming){
+	public Subscriber(Integer id, String name, Double salary, LocalDate startSubscription, Streaming streaming){
 		this.id = id;
 		this.name = name;
-		this.age = age;
+		this.salary = salary;
 		this.StartSubscription = startSubscription;
 		this.streaming = streaming;
+	}
+
+	public Subscriber() {
 	}
 
 	public Integer getId() {
@@ -40,12 +43,12 @@ public class Subscriber implements Serializable{
 		this.name = name;
 	}
 
-	public Integer getAge() {
-		return age;
+	public Double getSalary() {
+		return salary;
 	}
 
-	public void setAge(Integer age) {
-		this.age = age;
+	public void setSalary(Double salary) {
+		this.salary = salary;
 	}
 
 	public LocalDate getStartSubscription() {
@@ -83,7 +86,8 @@ public class Subscriber implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Subscriber [id=" + id + ", name=" + name + ", age=" + age + ", StartSubscription=" + StartSubscription
-				+ ", streaming=" + streaming + "]";
-	}	
+		return "Subscriber [id=" + id + ", name=" + name + ", salary=" + salary + ", StartSubscription="
+				+ StartSubscription + ", streaming=" + streaming + "]";
+	}
+
 }

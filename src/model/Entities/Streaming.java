@@ -11,7 +11,8 @@ public class Streaming implements Serializable{
 	private String name;
 	private Double price;
 	
-	
+	public Streaming() {
+	}
 	public Streaming(Integer id, String name, Double price) {
 		this.id = id;
 		this.name = name;
