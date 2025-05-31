@@ -48,6 +48,7 @@ public class ProgramSubscriber {
 	    System.out.println("Test DeleteById ===========");	
 	    subsDao.deleteById(4);
 	    
+	    System.out.println("tests completed");
         Db.closeConnection();
 	}
 

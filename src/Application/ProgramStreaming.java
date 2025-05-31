@@ -42,6 +42,7 @@ public class ProgramStreaming {
      stmDao.insert(new Streaming(null, "disney", 23.90)); //line7
      stmDao.deleteById(7);
      
+     System.out.println("tests completed");
 	}
 
 }
